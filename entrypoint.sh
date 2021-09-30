@@ -65,3 +65,4 @@ mv package.json.new package.json
 git commit -am "Next ${BUMP_LEVEL} version: ${NEXT_VERSION}"
 git tag "${NEXT_VERSION}"
 git push
+git push --tags
