@@ -58,7 +58,7 @@ CURRENT_VERSION=`jq -r ".version" package.json`
 NEXT_VERSION=$(bump-version $CURRENT_VERSION $BUMP_LEVEL)
 
 # Update package.json
-jq '.version = "$NEXT_VERSION"' package.json > package.json.new
+jq '.version = "'"$NEXT_VERSION"'"' package.json > package.json.new
 mv package.json.new package.json
 
 # git commit, tag and push
