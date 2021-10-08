@@ -38,11 +38,11 @@ class Version
   end
 
   def next_major_version
-    self.class.new(major + 1, minor, patch)
+    self.class.new(major + 1, 0, 0)
   end
 
   def next_minor_version
-    self.class.new(major, minor + 1, patch)
+    self.class.new(major, minor + 1, 0)
   end
 
   def next_patch_version
