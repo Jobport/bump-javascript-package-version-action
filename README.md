@@ -1,6 +1,6 @@
 ![alt text](bump.png)
 
-# bump gem version
+# bump Javascript package version
 
 A GitHub action to automatically bump the versions of your Javascript package after merging a pull request.
 
@@ -10,7 +10,7 @@ It will create a new version of your package and a git tag with the latest versi
 
 **`DEFAULT_BUMP_LEVEL`**
 
-`major`/`minor`/`patch`
+`bump:major`/`bump:minor`/`bump:patch`
 When given the action will use this default to bump the version if no label is present in the pull request.
 
 **`DRY_RUN`**
